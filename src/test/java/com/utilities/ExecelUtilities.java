@@ -16,7 +16,7 @@ public class ExecelUtilities {
 public static Map<String,String> getExcelData() throws FileNotFoundException{
 	HashMap<String, String> hashMap = new HashMap<String,String>();
 	try {
-		FileInputStream FIS = new FileInputStream("E:\\Data\\TestData.xlsx");
+		FileInputStream FIS = new FileInputStream("C:\\Users\\DELL\\eclipse-cucumber-practise\\Cucumber_Practics\\TestData\\TestData.xlsx");
 		Workbook xssfWorkbook = new XSSFWorkbook(FIS);
 		Sheet sheet = xssfWorkbook.getSheet("TC1");
 		Row headerrow = sheet.getRow(0);

@@ -1,8 +1,7 @@
 package com.stepdef;
 
 import java.io.FileNotFoundException;
-import java.util.Map;
-import java.util.Map.Entry;
+
 
 import com.base.BaseClass;
 
@@ -12,13 +11,14 @@ import com.utilities.ExecelUtilities;
 import io.cucumber.java.en.*;
 
 public class AdactinStepDefen extends BaseClass{
-	LoginPageObjects ig;
 	
+	LoginPageObjects ig;
 	
 	@Given("User launch the application {string}")
 	public void user_launch_the_application(String url) throws FileNotFoundException {
+		
 		launchBrowser();
-	   urlLaunch(get(url));
+		urlLaunch(get(url));
 	  
 	}
 
